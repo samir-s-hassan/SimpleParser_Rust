@@ -2,16 +2,17 @@
 // https://docs.rs/nom/7.1.3/nom/
 // Samir Hassan
 
-use nom::*;
+// use nom::*;
 use nom::{
     IResult,
     branch::alt,
     combinator::opt,
     combinator::map,
     multi::{ many1, many0 },
-    bytes::complete::{ tag, take_until, take_while },
-    character::complete::{ alphanumeric1, digit1, line_ending, not_line_ending },
-    sequence::{ preceded, tuple, delimited, pair },
+    // bytes::complete::{ tag, take_until, take_while },
+    // character::complete::{ alphanumeric1, digit1, line_ending, not_line_ending },
+    // sequence::{ preceded, tuple, delimited, pair },
+    sequence::{delimited, pair },
 };
 use crate::lexer::*;
 
@@ -462,7 +463,7 @@ pub fn function_define(input: Tokens) -> IResult<Tokens, Node> {
 }
 
 // comment = "//" , (?any-character? - newline);
-pub fn comment(input: Tokens) -> IResult<Tokens, Node> {
+pub fn comment(_input: Tokens) -> IResult<Tokens, Node> {
     unimplemented!();
 }
 
