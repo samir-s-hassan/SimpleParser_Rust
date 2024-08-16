@@ -18,7 +18,7 @@ The following functionality is implemented:
 
 1. Run "cargo build" to compile the project
 2. Run "cargo test" to check the passing test cases
-3. Run "cargo run" to actually run the project. In this case, this is not very important as main.rs only includes one "test case". Therefore, running "cargo test" is enough to verify the interpreter is working with our test case inputs.
+3. Run "cargo run" to actually run the project. In this case, this is not very important as main.rs only includes one test case. Therefore, running "cargo test" is enough to verify the interpreter is working with our test case inputs.
 4. Enjoy the project!
 
 ## Video Walkthrough
